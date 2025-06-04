@@ -8,7 +8,7 @@ const features = [
     name: "Your Virtual Office",
     year: "All-in-One Practice Management",
     align: "right",
-    image: "../../public/images/knowledge.png",
+    image: "/images/knowledge.png",
     description:
       "Patient records, schedules and communications unified in one HIPAA-compliant hub with smart scheduling and automated reminders",
   },
@@ -16,14 +16,14 @@ const features = [
     name: "Your Clinical Assistant",
     year: "AI-Powered Clinical Tools",
     align: "left",
-    image: "../../public/images/artificial-intelligence.png",
+    image: "/images/artificial-intelligence.png",
     description: "AI symptom pattern detection, DSM-5 diagnostic references",
   },
   {
     name: "Your Educational Studio",
     year: "Client Engagement Platform",
     align: "right",
-    image: "../../public/images/interaction.png",
+    image: "/images/interaction.png",
     description:
       "Evergreen content library, engagement analytics, and moderated community spaces",
   },
@@ -31,7 +31,7 @@ const features = [
     name: "Your Outcomes Lab",
     year: "Progress Tracking & Reporting",
     align: "left",
-    image: "../../public/images/base.png",
+    image: "/images/base.png",
     description:
       "Visual progress tracking, automated outcome measurement, and exportable reports",
   },
