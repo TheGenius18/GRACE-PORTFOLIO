@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Grace - Healing with AI</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Poppins:wght@400&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo"><img alt="Grace Logo" src="images/5.png" style="padding-top: 7px;" width="32%" /></div>
+        <nav class="nav-center">
+            <a href="#features">Features</a>
+            <a href="#journey">How It Works</a>
+            <a href="#therapists">For Therapists</a>
+            <a href="#about">About us</a>
+        </nav>
+        <div class="nav-right">
+            <a class="contact-btn" href="#contact">Contact Us</a>
+        </div>
+    </header>
+    <hr class="navbar-divider" id="navbar-divider" />
+    <!-- HERO -->
+    <section class="hero">
+        <!-- <div class="hero-bg"><img alt="" src="images/9.png"/></div> -->
+        <div class="hero-content">
+            <h1>
+                <span class="fade-in line1">GRACE, <span class="fade-in line2">DESIGNED JUST FOR YOU</span></span>
+            </h1>
+            <p class="fade-in line3">— YOUR STORY, PATH TO HEALING.</p>
+        </div>
+    </section>
+    <!-- FEATURES SECTION -->
+    <section class="mood-checkin-wrapper">
+        <section class="mood-check-in">
+            <h2 style="text-align: center;">How do you feel today?</h2>
+            <div style="display: flex; justify-content: center;">
+                <form id="moodForm" style="display: flex; align-items: center; gap: 12px;">
+                    <input type="text" name="moodText" placeholder="Type your mood..."
+                        style="padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px; height: 40px; width: 260px;" />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="moodResponse" style="margin-top: 12px; text-align: center;"></div>
+
+        </section>
+    </section>
+    <script>
+        document.getElementById('moodForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const mood = document.querySelector('input[name="moodText"]').value.trim();
+            const response = document.getElementById('moodResponse');
+
+            if (mood) {
+                response.textContent = `Thank you for sharing. You said: "${mood}"`;
+            } else {
+                response.textContent = `Please tell us how you're feeling today.`;
+            }
+        });
+    </script>
+    <section class="features-section" id="features">
+        <h2 class="section-title fade-in line1"><span class="decorative-line"></span>OUR FEATURES<span
+                class="decorative-line"></span></h2>
+        <div class="features-grid">
+            <!-- CARD 1 -->
+            <div class="feature-card fade-in delay-1" onclick="openModal('diagnosis')">
+                <div class="feature-card-content">
+                    <img alt="Diagnosis Icon" class="feature-icon" src="Images/Diagnosis.png" />
+                    <h2>Diagnosis</h2>
+                    <p>Get AI-based mental health evaluation to understand your emotional state.</p>
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="feature-card fade-in delay-2" onclick="openModal('interview')">
+                <div class="feature-card-content">
+                    <img alt="Interview Icon" class="feature-icon" src="images/Order.png" />
+                    <h2>Interview</h2>
+                    <p>Talk to our AI therapist to receive guidance and emotional support instantly.</p>
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="feature-card fade-in delay-3" onclick="openModal('doctors')">
+                <div class="feature-card-content">
+                    <img alt="Doctor Icon" class="feature-icon" src="images/CPU.png" />
+                    <h2>Doctors</h2>
+                    <p>Connect with licensed therapists for personalized and ongoing mental care.</p>
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Journey-->
+    <section class="journey-section" id="journey">
+        <h2 class="section-title" style="font-size: 100px;">YOUR JOURNEY IN 5 STEPS</h2>
+        <div class="timeline-container">
+            <div class="timeline-step" id="step1" style="--i: 1">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="step-label">Step 1</div>
+                        <div class="step-icon">🧠</div>
+                        <h3>Diagnosis</h3>
+                        <p>Start with an AI-driven mental health check.</p>
+                        <button class="info-icon" onclick="flipCard('step1')">More</button>
+                    </div>
+                    <div class="card-back">
+                        <p>AI evaluates your symptoms through an adaptive quiz and returns a wellness profile.</p>
+                        <button class="info-icon" onclick="flipCard('step1')">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-down" onclick="scrollToStep('step2')">
+                <svg fill="none" height="40" viewbox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="#0077cc" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+                <span>Continue</span>
+            </div>
+            <div class="timeline-step" id="step2" style="--i: 2">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="step-label">Step 2</div>
+                        <div class="step-icon">🎙️</div>
+                        <h3>Interview</h3>
+                        <p>Chat with our AI therapist for tailored support.</p>
+                        <button class="info-icon" onclick="flipCard('step2')">More</button>
+                    </div>
+                    <div class="card-back">
+                        <p>The AI conducts structured interviews to uncover root emotional patterns.</p>
+                        <button class="info-icon" onclick="flipCard('step2')">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-down" onclick="scrollToStep('step3')">
+                <svg fill="none" height="40" viewbox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="#0077cc" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+                <span>Continue</span>
+            </div>
+            <div class="timeline-step" id="step3" style="--i: 3">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="step-label">Step 3</div>
+                        <div class="step-icon">🧑‍⚕️</div>
+                        <h3>Find a Therapist</h3>
+                        <p>Connect with a licensed professional.</p>
+                        <button class="info-icon" onclick="flipCard('step3')">More</button>
+                    </div>
+                    <div class="card-back">
+                        <p>Select therapists based on specialization, availability, and user reviews.</p>
+                        <button class="info-icon" onclick="flipCard('step3')">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-down" onclick="scrollToStep('step4')">
+                <svg fill="none" height="40" viewbox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="#0077cc" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+                <span>Continue</span>
+            </div>
+            <div class="timeline-step" id="step4" style="--i: 4">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="step-label">Step 4</div>
+                        <div class="step-icon">🏋️</div>
+                        <h3>Training</h3>
+                        <p>Follow structured emotional strength exercises.</p>
+                        <button class="info-icon" onclick="flipCard('step4')">More</button>
+                    </div>
+                    <div class="card-back">
+                        <p>Daily exercises target emotional resilience, self-esteem, and mindfulness.</p>
+                        <button class="info-icon" onclick="flipCard('step4')">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-down" onclick="scrollToStep('step5')">
+                <svg fill="none" height="40" viewbox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="#0077cc" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+                <span>Continue</span>
+            </div>
+            <div class="timeline-step" id="step5" style="--i: 5">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="step-label">Step 5</div>
+                        <div class="step-icon">📈</div>
+                        <h3>Track Yourself</h3>
+                        <p>Monitor your progress and well-being over time.</p>
+                        <button class="info-icon" onclick="flipCard('step5')">More</button>
+                    </div>
+                    <div class="card-back">
+                        <p>Visual dashboards track your emotional growth and session history.</p>
+                        <button class="info-icon" onclick="flipCard('step5')">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AOS Animation Script -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function flipCard(stepId) {
+            const card = document.getElementById(stepId);
+            card.classList.toggle("flipped");
+        }
+
+        function scrollToStep(stepId, arrowElement) {
+            const current = document.getElementById(stepId);
+            if (current) {
+                current.classList.add('active');
+                updateProgressBar(stepId);
+                current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                if (arrowElement) {
+                    arrowElement.style.display = 'none';
+                }
+
+                if (stepId === 'step5') {
+                    const therapistWrapper = document.getElementById('therapists-wrapper');
+                    if (therapistWrapper) {
+                        setTimeout(() => {
+                            therapistWrapper.classList.add('visible');
+                            therapistWrapper.scrollIntoView({ behavior: 'smooth' });
+                        }, 800);
+                    }
+
+                    const aboutWrapper = document.getElementById('about-wrapper');
+                    if (aboutWrapper) {
+                        setTimeout(() => {
+                            aboutWrapper.style.display = 'block';
+
+                            // Trigger fade-in animation
+                            const aboutCard = aboutWrapper.querySelector('.about-card');
+                            if (aboutCard) {
+                                setTimeout(() => {
+                                    aboutCard.classList.add('visible');
+                                }, 200); // slight delay after showing
+                            }
+                        }, 1500);
+                    }
+
+                }
+            }
+        }
+
+        function scrollBackTo(prevStepId) {
+            const prev = document.getElementById(prevStepId);
+            if (prev) {
+                prev.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                updateProgressBar(prevStepId);
+            }
+        }
+
+        function updateProgressBar(stepId) {
+            const progressItems = document.querySelectorAll('.progress-step');
+            progressItems.forEach((item, index) => {
+                const targetStep = 'step' + (index + 1);
+                if (stepId === targetStep) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+
+        const journeyIO = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('visible');
+                    journeyIO.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+        const arrowObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('arrow-visible');
+                    arrowObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        document.querySelectorAll('.arrow-down').forEach(arrow => {
+            arrowObserver.observe(arrow);
+        });
+
+        const step1 = document.getElementById('step1');
+        if (step1) {
+            step1.classList.add('active');
+            journeyIO.observe(step1);
+        }
+
+        document.querySelectorAll('.timeline-step').forEach((step, index) => {
+            step.style.transitionDelay = `${index * 0.2}s`;
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Don't lock scroll on load
+            const journeySection = document.querySelector('#journey');
+
+            if (journeySection) {
+                const lockScrollObserver = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Once Journey section is in view, lock scroll
+                            document.body.classList.add('lock-scroll');
+                            lockScrollObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                lockScrollObserver.observe(journeySection);
+            }
+
+
+            const steps = document.querySelectorAll(".timeline-step");
+            const arrows = document.querySelectorAll(".arrow-down");
+            const therapistWrapper = document.getElementById("therapists-wrapper");
+
+            steps[0].classList.add("active");
+            arrows[0]?.classList.add("visible");
+
+            arrows.forEach((arrow, i) => {
+                arrow.addEventListener("click", () => {
+                    if (steps[i + 1]) {
+                        steps[i + 1].classList.add("active");
+                        arrows[i + 1]?.classList.add("visible");
+
+                        if (i + 1 === 4 && therapistWrapper) {
+                            therapistWrapper.classList.add("visible");
+                            setTimeout(() => {
+                                therapistWrapper.scrollIntoView({ behavior: 'smooth' });
+                            }, 600);
+                        }
+                    }
+                    arrow.classList.remove("visible");
+                });
+            });
+        });
+    </script>
+    <!--Therapists section-->
+    <div id="therapists-wrapper">
+        <section class="therapists-section" id="therapists">
+            <h2 class="section-title" style="font-size: 80px;"><span class="decorative-line"></span>FOR THE
+                THERAPISTS<span class="decorative-line"></span></h2>
+            <div class="therapist-slider-container">
+                <button class="therapist-prev-btn">&lt;</button>
+
+                <div class="therapist-slider-track">
+                    <div class="therapist-card">
+                        <div class="icon">🗂️</div>
+                        <h3>Complete Treatment Management</h3>
+                        <p>Manage your clients with session logs, schedules, progress notes, and therapy plans—all from
+                            one
+                            dashboard.</p>
+                    </div>
+                    <div class="therapist-card">
+                        <div class="icon">🏋️</div>
+                        <h3>Guided Exercise Assignment</h3>
+                        <p>Assign emotional strength exercises and daily mental health activities that patients can
+                            complete
+                            between sessions.</p>
+                    </div>
+                    <div class="therapist-card">
+                        <div class="icon">🤖</div>
+                        <h3>AI-Powered Patient Diagnosis</h3>
+                        <p>Leverage artificial intelligence to analyze patient inputs and generate real-time
+                            psychological
+                            assessments.</p>
+                    </div>
+                    <div class="therapist-card">
+                        <div class="icon">🎥</div>
+                        <h3>Private Patient Sessions</h3>
+                        <p>Hold secure one-on-one sessions via live chat or encrypted video conferencing, built directly
+                            into
+                            the platform.</p>
+                    </div>
+                    <div class="therapist-card">
+                        <div class="icon">📊</div>
+                        <h3>Insightful Tools & More</h3>
+                        <p>Use built-in analytics, mood tracking, and alert systems to support clients with
+                            data-informed
+                            care.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="therapist-next-btn">&gt;</button>
+
+                <div class="therapist-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const track = document.querySelector('.therapist-slider-track');
+            const cards = document.querySelectorAll('.therapist-card');
+            const nextBtn = document.querySelector('.therapist-next-btn');
+            const prevBtn = document.querySelector('.therapist-prev-btn');
+            const dots = document.querySelectorAll('.therapist-dots .dot');
+            let currentIndex = 0;
+            let autoAdvance;
+
+            function updateSlider() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
+            }
+
+            function goTo(index) {
+                currentIndex = (index + cards.length) % cards.length;
+                updateSlider();
+            }
+
+            function nextSlide() {
+                goTo(currentIndex + 1);
+            }
+
+            function prevSlide() {
+                goTo(currentIndex - 1);
+            }
+
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                resetAutoAdvance();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                resetAutoAdvance();
+            });
+
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', () => {
+                    goTo(i);
+                    resetAutoAdvance();
+                });
+            });
+
+            // Touch & drag
+            let startX = 0;
+            let isDragging = false;
+            let deltaX = 0;
+
+            track.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                startX = e.touches[0].pageX;
+            });
+
+            track.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                deltaX = e.touches[0].pageX - startX;
+            });
+
+            track.addEventListener('touchend', () => {
+                isDragging = false;
+                if (deltaX < -50) nextSlide();
+                else if (deltaX > 50) prevSlide();
+                deltaX = 0;
+                resetAutoAdvance();
+            });
+
+            // Auto-advance every 7 seconds
+            function startAutoAdvance() {
+                autoAdvance = setInterval(nextSlide, 7000);
+            }
+
+            function resetAutoAdvance() {
+                clearInterval(autoAdvance);
+                startAutoAdvance();
+            }
+
+            // Scroll reveal
+            const therapistSection = document.querySelector('.therapists-section');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        therapistSection.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            if (therapistSection) observer.observe(therapistSection);
+
+            // Init
+            updateSlider();
+            startAutoAdvance();
+        });
+    </script>
+    <!--About us section-->
+    <div id="about-wrapper" style="display: none;">
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="section-title">ABOUT US</h2>
+                    <p class="about-para"
+                        data-raw="Grace is more than a platform — it’s a movement for modern healing. Founded by therapists, designers, and engineers, our mission is to make high-quality mental support accessible, intelligent, and deeply personal.">
+                    </p>
+
+                    <p class="about-para"
+                        data-raw="Whether you're seeking a diagnosis, professional guidance, or self-paced exercises, Grace is here to walk with you — from your first check-in to long-term recovery.">
+                    </p>
+
+
+                </div>
+                <div class="about-image">
+                    <img src="images/7.png" alt="Our Team">
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script>
+        function typeParagraphText(element, rawText, speed = 20) {
+            let i = 0;
+            const cleanText = rawText.replace(/\s+/g, ' ').trim();
+            element.innerHTML = '';
+            element.style.opacity = 1;
+
+            function type() {
+                if (i < cleanText.length) {
+                    element.innerHTML += cleanText.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+
+            type();
+        }
+
+        const aboutWrapper = document.getElementById('about-wrapper');
+        const aboutObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const section = aboutWrapper.querySelector('.about-section');
+                    if (section) {
+                        section.classList.add('visible');
+                    }
+
+                    const pTags = aboutWrapper.querySelectorAll('.about-para');
+                    pTags.forEach((p, index) => {
+                        const text = p.getAttribute('data-raw');
+                        setTimeout(() => {
+                            typeParagraphText(p, text, 25);
+                        }, index * 1500);
+                    });
+
+                    aboutObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (aboutWrapper) {
+            aboutObserver.observe(aboutWrapper);
+        }
+
+
+    </script>
+    <!-- Quote Section Before Contact -->
+    <div id="quote-wrapper" style="display: none;">
+        <section class="quote-section">
+            <blockquote id="quoteText">
+                <!-- text will be typed here -->
+            </blockquote>
+            <span class="signature">— The Grace Team</span>
+        </section>
+    </div>
+    <!-- Contact Section (Initially Hidden Like About/Therapists) -->
+    <div id="contact-wrapper" style="display: none;">
+        <section class="contact-section" id="contact">
+            <div class="contact-card">
+                <h2 class="section-title">Contact Us</h2>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="confirmationMessage"
+                    style="display: none; margin-top: 20px; font-size: 1.2rem; color: #0f0; animation: fadeIn 1s ease forwards;">
+                    Thank you! Your message has been sent.
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Footer / Copyright -->
+    <footer class="footer-section">
+        <p>&copy; 2025 Grace Mental Health Platform. All rights reserved.</p>
+        <a href="#" class="back-to-top">↑ Back to Top</a>
+    </footer>
+    <script>
+        function scrollToStep(stepId, arrowElement) {
+            const current = document.getElementById(stepId);
+            if (current) {
+                current.classList.add('active');
+                updateProgressBar(stepId);
+                current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                if (arrowElement) {
+                    arrowElement.style.display = 'none';
+                }
+
+                if (stepId === 'step5') {
+                    const therapistWrapper = document.getElementById('therapists-wrapper');
+                    if (therapistWrapper) {
+                        setTimeout(() => {
+                            therapistWrapper.classList.add('visible');
+                            therapistWrapper.scrollIntoView({ behavior: 'smooth' });
+                        }, 800);
+                    }
+
+                    const aboutWrapper = document.getElementById('about-wrapper');
+                    if (aboutWrapper) {
+                        setTimeout(() => {
+                            aboutWrapper.style.display = 'block';
+                            const aboutCard = aboutWrapper.querySelector('.about-card');
+                            if (aboutCard) {
+                                setTimeout(() => {
+                                    aboutCard.classList.add('visible');
+                                }, 200);
+                            }
+                        }, 1500);
+                    }
+
+                    const quoteWrapper = document.getElementById('quote-wrapper');
+                    if (quoteWrapper) {
+                        setTimeout(() => {
+                            quoteWrapper.style.display = 'block';
+                            quoteWrapper.querySelector('.quote-section').classList.add('visible');
+                            const quoteEl = document.getElementById('quoteText');
+                            const quote = "We built Grace because every healing journey deserves care, data, and dignity.";
+                            let i = 0;
+                            function typeQuote() {
+                                if (i < quote.length) {
+                                    quoteEl.textContent += quote.charAt(i);
+                                    i++;
+                                    setTimeout(typeQuote, 35);
+                                }
+                            }
+                            typeQuote();
+                        }, 1900);
+                    }
+
+                    const contactWrapper = document.getElementById('contact-wrapper');
+                    if (contactWrapper) {
+                        setTimeout(() => {
+                            contactWrapper.style.display = 'block';
+                        }, 2200);
+                    }
+                }
+            }
+        }
+
+        const contactWrapper = document.getElementById('contact-wrapper');
+        const contactObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const section = contactWrapper.querySelector('.contact-section');
+                    if (section) {
+                        section.classList.add('visible');
+                    }
+                    contactObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (contactWrapper) {
+            contactObserver.observe(contactWrapper);
+        }
+
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const confirmation = document.getElementById('confirmationMessage');
+            confirmation.style.display = 'block';
+            confirmation.style.opacity = 0;
+            setTimeout(() => {
+                confirmation.style.opacity = 1;
+            }, 100);
+            contactForm.reset();
+        });
+
+        // Smooth scroll for navbar and back-to-top
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href').substring(1);
+                const targetEl = document.getElementById(targetId);
+                if (targetEl) {
+                    e.preventDefault();
+                    targetEl.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+    <!-- MODALS -->
+    <div class="modal" id="modal-diagnosis">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('diagnosis')">×</span>
+            <h3>Diagnosis</h3>
+            <p>This feature provides AI-based psychological assessments to help users understand their emotional
+                state.
+            </p>
+        </div>
+    </div>
+    <div class="modal" id="modal-interview">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('interview')">×</span>
+            <h3>Interview</h3>
+            <p>Interactive AI interviews mimic therapist conversations to guide users toward support paths.</p>
+        </div>
+    </div>
+    <div class="modal" id="modal-doctors">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('doctors')">×</span>
+            <h3>Doctors</h3>
+            <p>Our network of licensed therapists is available for live sessions and personalized therapy plans.</p>
+        </div>
+    </div>
+    <script>
+        // Navbar behavior
+        const navbar = document.getElementById("navbar");
+        const divider = document.getElementById("navbar-divider");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add("scrolled");
+                divider.classList.add("hidden");
+            } else {
+                navbar.classList.remove("scrolled");
+                divider.classList.remove("hidden");
+            }
+        });
+
+        // Modals
+        function openModal(type) {
+            const modal = document.getElementById(`modal-${type}`);
+            modal.classList.add("show");
+        }
+
+        function closeModal(type) {
+            const modal = document.getElementById(`modal-${type}`);
+            modal.classList.remove("show");
+        }
+
+        window.addEventListener("click", (e) => {
+            const modals = ["diagnosis", "interview", "doctors"];
+            modals.forEach((type) => {
+                const modal = document.getElementById(`modal-${type}`);
+                if (e.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+
+        // Reveal on scroll (e.g., features section)
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("revealed");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.3 }
+        );
+
+        const featuresSection = document.querySelector(".features-section");
+        if (featuresSection) observer.observe(featuresSection);
+
+        // Journey reveal observer
+        const journeyObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("revealed");
+                        journeyObserver.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.3 }
+        );
+        document.querySelectorAll(".timeline-step").forEach((el) => journeyObserver.observe(el));
+
+        // Popover logic
+        function togglePopover(id) {
+            document.querySelectorAll(".popover").forEach((p) => p.classList.remove("visible"));
+            const pop = document.getElementById(id);
+            if (pop) pop.classList.toggle("visible");
+        }
+
+        window.addEventListener("click", function (e) {
+            if (!e.target.classList.contains("info-icon")) {
+                document.querySelectorAll(".popover").forEach((p) => p.classList.remove("visible"));
+            }
+        });
+    </script>
+    <script>
+        const moodSection = document.querySelector('.mood-check-in');
+        const moodObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    moodSection.classList.add('revealed');
+                    moodObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (moodSection) moodObserver.observe(moodSection);
+    </script>
+    <script>
+        const journeySection = document.querySelector('.journey-section');
+        const journeyScrollObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    journeySection.classList.add('revealed');
+                    journeyScrollObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (journeySection) journeyScrollObserver.observe(journeySection);
+    </script>
+    <script>
+        const timelineSteps = document.querySelectorAll('.timeline-step');
+        const stepObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    stepObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        timelineSteps.forEach(step => {
+            stepObserver.observe(step);
+        });
+    </script>
+    <script>
+        const moodWrapper = document.querySelector('.mood-checkin-wrapper');
+
+        const circleObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    moodWrapper.classList.add('revealed');
+                    circleObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (moodWrapper) circleObserver.observe(moodWrapper);
+    </script>
+    <script>
+        document.querySelectorAll('.section-title').forEach(title => {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        title.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            observer.observe(title);
+        });
+    </script>
+</body>
+
+</html>

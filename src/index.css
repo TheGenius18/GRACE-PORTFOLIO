@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme variables */
+  --darkBrown: 226, 232, 240;
+  --black: 30, 41, 59;
+  --white: 255, 255, 255;
+  --cyan: 8, 145, 178;
+  --lightCyan: 6, 182, 212;
+  --darkCyan: 14, 116, 144;
+  --darkerCyan: 7, 89, 133;
+  --orange: 245, 158, 11;
+  --grey: 203, 213, 225;
+  --lightGrey: 248, 250, 252;
+  --darkGrey: 148, 163, 184;
+  --fill: 254, 202, 202;
+}
+
+.light {
+  /* Dark theme variables */
+  --darkBrown: 2, 23, 41;
+  --black: 30, 25, 23;
+  --white: 241, 225, 217;
+  --cyan: 21, 209, 233;
+  --lightCyan: 136, 229, 240;
+  --darkCyan: 0, 159, 179;
+  --darkerCyan: 0, 129, 177;
+  --orange: 255, 222, 33;
+  --grey: 16, 47, 65;
+  --lightGrey: 241, 225, 217;
+  --darkGrey: 63, 68, 65;
+  --fill: 245, 201, 179;
+}
+
+body {
+  @apply bg-darkBrown text-white; /* Default dark mode with cyan text */
+}
+
+.light body {
+  @apply bg-light-white text-darkerCyan; /* Light mode with darker cyan text */
+}
