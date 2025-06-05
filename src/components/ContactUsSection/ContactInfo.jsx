@@ -4,7 +4,8 @@ import SingleInfo from "./SingleInfo";
 const ContactInfo = () => {
   return (
     <div className="flex flex-col gap-4">
-      <SingleInfo text="Grace@gmail.com" Image={HiOutlineMail} />
+      <SingleInfo text="tarek4gamez@gmail.com" Image={HiOutlineMail} />
+      <SingleInfo text="mohammed.zair.job@gmail.com" Image={HiOutlineMail} />
     </div>
   );
 };

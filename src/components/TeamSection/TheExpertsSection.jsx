@@ -2,40 +2,42 @@ import { motion } from "framer-motion";
 
 const experts = [
   {
-    name: "Dr. AFAF AL SHALABI",
-    role: "AI Researcher",
-    contact: "AFAF@company.com",
-    img: "/avatars/avatar1.png", // use placeholder or local avatar
+    name: "Prof. Dr. Caroline Schmitt",
+    role: "Professorship for Ecosocial Work and Care",
+    contact: "caroline.schmitt@fra-uas.de",
+    img: "/images/caro.png",
+  },
+
+  {
+    name: "Dr. Nora",
+    role: "Psychotherapist",
+    contact: "",
+    img: "/images/female.png",
   },
   {
-    name: "NORA",
-    role: "THERAPIST",
-    contact: "NORA@company.com",
-    img: "/avatars/avatar2.png",
+    name: "Prof. Dr. Afaf ALSHALABI",
+    role: "Dean of the Faculty of IE & AI Researcher",
+    contact: "alshalaby.afaf@gmail.com",
+    img: "/images/afaf.png", // use placeholder or local avatar
+  },
+
+  {
+    name: "Prof. Dr. Youssef Latifeh",
+    role: "Professor in Psychiatry",
+    contact: "Youssef.Latifeh@damascusuniversity.edu.sy",
+    img: "/images/yousef.png",
   },
   {
-    name: "RAWAN",
-    role: "THERAPIST",
-    contact: "RAWAN@company.com",
-    img: "/avatars/avatar3.png",
+    name: "Prof. Dr. Thayr Haydar",
+    role: "Psychiatrist",
+    contact: "Thayrhaydarh@gmail.com",
+    img: "/images/Thaer.png",
   },
   {
-    name: "DR.YOUSEF LATIFA",
-    role: "THERAPIST",
-    contact: "YOUSEF@company.com",
-    img: "/avatars/avatar4.png",
-  },
-  {
-    name: "DR.THAER HAIDAR",
-    role: "Psychologist",
-    contact: "THAER@company.com",
-    img: "/avatars/avatar5.png",
-  },
-  {
-    name: "DR.CAROLINE",
-    role: "Manager",
-    contact: "Caroline@company.com",
-    img: "/avatars/avatar6.png",
+    name: "Dr. Rawan Zair",
+    role: "Psychotherapist",
+    contact: "rawanalzeaeer@gmail.com",
+    img: "/images/female.png",
   },
 ];
 
@@ -59,7 +61,7 @@ const TheExpertsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gradient-to-r from-[#24025333] to-[#01092336] border border-darkCyan p-6 rounded-xl hover:shadow-lg hover:shadow-cyan/20 transition-all duration-300 text-white"
+              className="bg-gradient-to-r from-[#24025333] to-[#01092336] border border-darkCyan p-6  rounded-xl hover:shadow-lg hover:shadow-cyan/20 transition-all duration-300 text-white"
             >
               <div className="flex flex-col items-center text-center">
                 <img
@@ -71,7 +73,9 @@ const TheExpertsSection = () => {
                   {expert.name}
                 </h3>
                 <p className="text-sm text-gray-500 mb-2">{expert.role}</p>
-                <p className="text-sm text-cyan-600">{expert.contact}</p>
+                <p className="text-sm text-cyan-600 break-words text-center max-w-[90%] mx-auto">
+                  {expert.contact}
+                </p>
               </div>
             </motion.div>
           ))}
