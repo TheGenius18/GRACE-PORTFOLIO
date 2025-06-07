@@ -24,7 +24,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="p-4">
+      <div className="p-0">
         <Routes>
           <Route path="/Emergency" element={<EmergencyPage />} />
           <Route path="/" element={<Home />} />
