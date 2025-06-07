@@ -1,143 +1,128 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaClipboardList, FaUserMd, FaTools, FaHeartbeat } from 'react-icons/fa';
-import { fadeIn } from '../../framerMotion/variants';
+// Refactored: ServicesMain.jsx with i18next support
+import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  FaClipboardList,
+  FaUserMd,
+  FaTools,
+  FaHeartbeat,
+} from "react-icons/fa";
+import { fadeIn } from "../../framerMotion/variants";
+import { useTranslation } from "react-i18next";
 
 const GraceAppSection = () => {
-  const [activeStep, setActiveStep] = useState('test');
+  const { t } = useTranslation();
+  const [activeStep, setActiveStep] = useState("test");
 
   const GraceStepsData = {
     test: {
-      title: "Depression Test",
-      tagline: "First Step to Understanding",
+      title: t("grace.steps.test.title"),
+      tagline: t("grace.steps.test.tagline"),
       icon: <FaClipboardList />,
-      description: "Grace uses the scientifically validated Beck Depression Inventory (BDI) to help you understand your current emotional state through either an AI conversation or structured questionnaire.",
+      description: t("grace.steps.test.description"),
       features: [
         {
-          title: "Assessment Options",
-          items: [
-            "AI Chat Diagnosis - Conversational evaluation",
-            "Form-Based Diagnosis - Structured questionnaire",
-          ]
+          title: t("grace.steps.test.features.0.title"),
+          items: t("grace.steps.test.features.0.items", {
+            returnObjects: true,
+          }),
         },
         {
-          title: "What You'll Get",
-          items: [
-            "Personalized depression level insights",
-            "Thought reflection guidance",
-            "Clear starting point for treatment"
-          ]
+          title: t("grace.steps.test.features.1.title"),
+          items: t("grace.steps.test.features.1.items", {
+            returnObjects: true,
+          }),
         },
         {
-          title: "Why It Matters",
-          items: [
-            "Establishes your baseline",
-            "Helps tailor your therapy plan",
-            "Provides objective measurement"
-          ]
-        }
-      ]
+          title: t("grace.steps.test.features.2.title"),
+          items: t("grace.steps.test.features.2.items", {
+            returnObjects: true,
+          }),
+        },
+      ],
     },
     therapist: {
-      title: "Begain with Therapist",
-      tagline: "Personalized Care Journey",
+      title: t("grace.steps.therapist.title"),
+      tagline: t("grace.steps.therapist.tagline"),
       icon: <FaUserMd />,
-      description: "Grace connects you with the right professional support, whether through human therapists or our AI-guided therapy system, to begin your personalized treatment plan.",
+      description: t("grace.steps.therapist.description"),
       features: [
         {
-          title: "how it works",
-          items: [
-            "choose your perfect match therapist",
-            "choose your sessions time",
-            "start your therapy journey"
-          ]
+          title: t("grace.steps.therapist.features.0.title"),
+          items: t("grace.steps.therapist.features.0.items", {
+            returnObjects: true,
+          }),
         },
         {
-          title: "Treatment Features",
-          items: [
-            "Tailored treatment plans",
-            "Continuous chat support",
-            "Scheduled sessions"
-          ]
+          title: t("grace.steps.therapist.features.1.title"),
+          items: t("grace.steps.therapist.features.1.items", {
+            returnObjects: true,
+          }),
         },
         {
-          title: "Progress Tracking",
-          items: [
-            "Regular check-ins",
-            "Visual progress charts",
-            "Adjustable treatment intensity"
-          ]
-        }
-      ]
+          title: t("grace.steps.therapist.features.2.title"),
+          items: t("grace.steps.therapist.features.2.items", {
+            returnObjects: true,
+          }),
+        },
+      ],
     },
     tools: {
-      title: "Therapeutic Tools",
-      tagline: "Science-Backed Techniques",
+      title: t("grace.steps.tools.title"),
+      tagline: t("grace.steps.tools.tagline"),
       icon: <FaTools />,
-      description: "Access a comprehensive toolkit of therapeutic exercises designed to help you manage depression through various evidence-based approaches.",
+      description: t("grace.steps.tools.description"),
       features: [
         {
-          title: "Therapy Tools",
-          items: [
-            "diary & pattern tracking",
-            "Problem solving frameworks",
-            "Social role playing"
-          ]
+          title: t("grace.steps.tools.features.0.title"),
+          items: t("grace.steps.tools.features.0.items", {
+            returnObjects: true,
+          }),
         },
         {
-          title: "Self-Care Practices",
-          items: [
-            "Mindfulness meditation",
-            "Breathing techniques",
-            "Muscle relaxation"
-          ]
+          title: t("grace.steps.tools.features.1.title"),
+          items: t("grace.steps.tools.features.1.items", {
+            returnObjects: true,
+          }),
         },
         {
-          title: "Behavioral Tools",
-          items: [
-            "Cognitive reframing",
-            "Emotion regulation",
-            "Goal setting systems"
-          ]
-        }
-      ]
+          title: t("grace.steps.tools.features.2.title"),
+          items: t("grace.steps.tools.features.2.items", {
+            returnObjects: true,
+          }),
+        },
+      ],
     },
     healing: {
-      title: "Healing & Growth",
-      tagline: "Your Wellness Journey",
+      title: t("grace.steps.healing.title"),
+      tagline: t("grace.steps.healing.tagline"),
       icon: <FaHeartbeat />,
-      description: "Grace supports your long-term mental wellness with strategies to maintain progress and build resilience against future challenges.",
+      description: t("grace.steps.healing.description"),
       features: [
         {
-          title: "Progress Recognition",
-          items: [
-            "Mood improvement tracking",
-            "Mindset shift awareness",
-            "Behavioral change metrics"
-          ]
+          title: t("grace.steps.healing.features.0.title"),
+          items: t("grace.steps.healing.features.0.items", {
+            returnObjects: true,
+          }),
         },
         {
-          title: "Resilience Building",
-          items: [
-            "Setback prevention plans",
-            "Coping strategy development",
-            "Stress management techniques"
-          ]
+          title: t("grace.steps.healing.features.1.title"),
+          items: t("grace.steps.healing.features.1.items", {
+            returnObjects: true,
+          }),
         },
         {
-          title: "Maintenance",
-          items: [
-            "Long-term wellness strategies",
-            "Relapse prevention",
-            "Community support options"
-          ]
-        }
-      ]
-    }
+          title: t("grace.steps.healing.features.2.title"),
+          items: t("grace.steps.healing.features.2.items", {
+            returnObjects: true,
+          }),
+        },
+      ],
+    },
   };
 
   return (
-    <motion.section 
+    <motion.section
       initial="hidden"
       whileInView="show"
       viewport={{ amount: 0.2 }}
@@ -145,17 +130,17 @@ const GraceAppSection = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <motion.div 
+        <motion.div
           variants={fadeIn("down", 0.2)}
           className="text-center my-16"
         >
           <h2 className="text-4xl font-bold text-cyan font-special mb-4">
-            Grace's Healing Pathway
+            {t("grace.title")}
           </h2>
         </motion.div>
 
         {/* Step Selector */}
-        <motion.div 
+        <motion.div
           variants={fadeIn("up", 0.4)}
           className="flex flex-wrap justify-center gap-4 mb-12"
         >
@@ -168,7 +153,7 @@ const GraceAppSection = () => {
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center ${
                 activeStep === step
                   ? `bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg`
-                  : 'bg-gradient-to-r from-[#24025360] to-[#01092357] text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 border border-cyan border-opacity-[.4]'
+                  : "bg-gradient-to-r from-[#24025360] to-[#01092357] text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 border border-cyan border-opacity-[.4]"
               }`}
             >
               <span className="mr-2">{GraceStepsData[step].icon}</span>
@@ -178,21 +163,23 @@ const GraceAppSection = () => {
         </motion.div>
 
         {/* Active Step Content */}
-        <motion.div 
+        <motion.div
           variants={fadeIn("up", 0.6)}
           className="rounded-2xl shadow-xl overflow-hidden bg-gradient-to-r from-[#24025333] to-[#01092336]"
         >
           <div className="md:flex">
             {/* Text Content */}
             <div className="p-8 md:pr-12">
-              <motion.div 
+              <motion.div
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
                 variants={fadeIn("right", 0.2)}
                 className="flex items-center mb-8"
               >
-                <div className={`w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl mr-6 bg-gradient-to-r from-cyan-500 to-blue-600`}>
+                <div
+                  className={`w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl mr-6 bg-gradient-to-r from-cyan-500 to-blue-600`}
+                >
                   {GraceStepsData[activeStep].icon}
                 </div>
                 <div>
@@ -205,7 +192,7 @@ const GraceAppSection = () => {
                 </div>
               </motion.div>
 
-              <motion.p 
+              <motion.p
                 initial="hidden"
                 whileInView="show"
                 viewport={{ amount: 0.1 }}
@@ -229,20 +216,24 @@ const GraceAppSection = () => {
                     <h4 className="text-cyan font-semibold text-lg mb-3">
                       {feature.title}
                     </h4>
-                    <ul className="">
-                      {feature.items.map((item, j) => (
-                        <motion.li 
-                          key={j}
-                          initial="hidden"
-                          whileInView="show"
-                          viewport={{ amount: 0.1 }}
-                          variants={fadeIn("right", 0.6 + j * 0.1)}
-                          className="flex items-start mb-2 last:mb-0"
-                        >
-                          <span className="inline-block w-2 h-2 rounded-full bg-cyan mt-2 mr-3"></span>
-                          <span className="text-gray-600 dark:text-gray-300">{item}</span>
-                        </motion.li>
-                      ))}
+                    <ul>
+                      {(Array.isArray(feature.items) ? feature.items : []).map(
+                        (item, j) => (
+                          <motion.li
+                            key={j}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ amount: 0.1 }}
+                            variants={fadeIn("right", 0.6 + j * 0.1)}
+                            className="flex items-start mb-2 last:mb-0"
+                          >
+                            <span className="inline-block w-2 h-2 rounded-full bg-cyan mt-2 mr-3"></span>
+                            <span className="text-gray-600 dark:text-gray-300">
+                              {item}
+                            </span>
+                          </motion.li>
+                        )
+                      )}
                     </ul>
                   </motion.div>
                 ))}
@@ -250,7 +241,7 @@ const GraceAppSection = () => {
             </div>
 
             {/* Visual Content */}
-            <motion.div 
+            <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.1 }}
@@ -258,15 +249,15 @@ const GraceAppSection = () => {
               className="flex flex-col justify-center p-8"
             >
               <div className="mr-10 rounded-2xl bg-opacity-10 flex items-center justify-center">
-                <motion.div 
-                  animate={{ 
+                <motion.div
+                  animate={{
                     scale: [1, 1.05, 1],
-                    rotate: [0, 5, -5, 0]
+                    rotate: [0, 5, -5, 0],
                   }}
                   transition={{
                     duration: 8,
                     repeat: Infinity,
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                   }}
                   className="text-9xl text-cyan text-opacity-70"
                 >

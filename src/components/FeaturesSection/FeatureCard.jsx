@@ -2,18 +2,24 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import { FaBrain, FaUserMd, FaHeartbeat } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const FeatureCard = ({ feature, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const { t } = useTranslation();
 
   const getIcon = () => {
-    const iconClass = `fade-in text-8xl bg-clip-text text-transparent ${isExpanded ? `text-darkCyan drop-shadow-[0_0_5px_rgba(174,11,208,1)]
-          hover:drop-shadow-[0_0_10px_rgba(34,211,238,1)]
-          transition-all duration-300` : `text-white drop-shadow-[0_0_5px_rgba(34,211,238,1)]
-          hover:drop-shadow-[0_0_10px_rgba(34,211,238,1)]
-          transition-all duration-300`}`;
-    
-    switch(feature.iconName) {
+    const iconClass = `fade-in text-8xl bg-clip-text text-transparent ${
+      isExpanded
+        ? `text-darkCyan drop-shadow-[0_0_5px_rgba(174,11,208,1)]
+           hover:drop-shadow-[0_0_10px_rgba(34,211,238,1)]
+           transition-all duration-300`
+        : `text-white drop-shadow-[0_0_5px_rgba(34,211,238,1)]
+           hover:drop-shadow-[0_0_10px_rgba(34,211,238,1)]
+           transition-all duration-300`
+    }`;
+
+    switch (feature.iconName) {
       case "brain":
         return <FaBrain className={iconClass} />;
       case "userMd":
@@ -26,7 +32,6 @@ const FeatureCard = ({ feature, index }) => {
   };
 
   return (
-    
     <motion.div
       variants={fadeIn("up", index * 0.2)}
       initial="hidden"
@@ -37,18 +42,22 @@ const FeatureCard = ({ feature, index }) => {
         ${isExpanded ? "h-auto min-h-[440px]" : "h-[440px]"} 
         bg-gradient-to-r from-[#24025333] to-[#01092336] border-2 border-cyan/30 hover:border-cyan/70 shadow-lg hover:shadow-cyan/20`}
     >
-      <div className={`flex flex-col h-full ${isExpanded ? "justify-start" : "justify-between"}`}>
+      <div
+        className={`flex flex-col h-full ${
+          isExpanded ? "justify-start" : "justify-between"
+        }`}
+      >
         <motion.div
           animate={{
             scale: isExpanded ? 0.8 : 1,
-            marginBottom: isExpanded ? "0.5rem" : "1.5rem"
+            marginBottom: isExpanded ? "0.5rem" : "1.5rem",
           }}
           transition={{ duration: 0.3 }}
           className={`${isExpanded ? "text-3xl" : "text-4xl"} self-center`}
         >
           {getIcon()}
         </motion.div>
-        
+
         {!isExpanded && (
           <motion.div
             initial={{ opacity: 1 }}
@@ -56,11 +65,13 @@ const FeatureCard = ({ feature, index }) => {
             transition={{ duration: 0.2 }}
             className="text-center"
           >
-            <h3 className="text-cyan text-xl font-bold mb-4">{feature.title}</h3>
+            <h3 className="text-cyan text-xl font-bold mb-4">
+              {feature.title}
+            </h3>
             <p className="text-lightGrey">{feature.summary}</p>
           </motion.div>
         )}
-        
+
         {isExpanded && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
@@ -81,9 +92,13 @@ const FeatureCard = ({ feature, index }) => {
 
         <motion.div
           layout
-          className={`mt-4 text-cyan font-semibold text-sm ${isExpanded ? "self-end" : "self-center"}`}
+          className={`mt-4 text-cyan font-semibold text-sm ${
+            isExpanded ? "self-end" : "self-center"
+          }`}
         >
-          {isExpanded ? "See Less ↑" : "See More ↓"}
+          {isExpanded
+            ? t("features.common.seeLess")
+            : t("features.common.seeMore")}
         </motion.div>
       </div>
     </motion.div>

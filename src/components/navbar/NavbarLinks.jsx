@@ -1,33 +1,41 @@
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
-const links = [
-  { link: "How It Works", section: "services" },
-  { link: "Features", section: "features" },
-  { link: "For the Therapist", section: "therapist" },
-  { link: "About Us", section: "about" },
-  { link: "Contact", section: "contact" },
-];
+const NavbarLinks = ({ mobile = false }) => {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.dir() === "rtl";
 
-const NavbarLinks = () => {
+  const links = [
+    { label: t("navbar.links.how"), section: "services" },
+    { label: t("navbar.links.features"), section: "features" },
+    { label: t("navbar.links.therapist"), section: "therapist" },
+    { label: t("navbar.links.about"), section: "about" },
+    { label: t("navbar.links.contact"), section: "contact" },
+  ];
+
   return (
-    <ul className="flex lg:flex-row px-5 sm:rounded-full lg:bg-opacity-[0] sm:bg-black sm:flex-col gap-6 text-white font-body lg:relative sm:absolute text-center left-[50%] -translate-x-[50%] lg:text-md sm:text-xl  backdrop-blur-lg lg:bg-transparent sm:w-full py-4 z-[500]">
-      {links.map((link, index) => {
-        return (
-          <li key={index} className="group">
-            <Link
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-130}
-              to={link.section}
-              className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
-            >
-              {link.link}
-            </Link>
-            <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
-          </li>
-        );
-      })}
+    <ul
+      className={`flex ${
+        mobile
+          ? "flex-col items-center gap-6 text-xl py-6"
+          : "flex-row gap-6 text-md"
+      } font-body text-white ${isRTL ? "text-right" : "text-left"}`}
+    >
+      {links.map(({ label, section }, index) => (
+        <li key={index} className="group">
+          <Link
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-130}
+            to={section}
+            className="cursor-pointer hover:text-cyan transition-all duration-300"
+          >
+            {label}
+          </Link>
+          <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-300"></div>
+        </li>
+      ))}
     </ul>
   );
 };

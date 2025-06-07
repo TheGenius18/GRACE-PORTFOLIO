@@ -1,0 +1,345 @@
+{
+  "hero": {
+    "subtitle": "Even in your heaviest moments",
+    "title": "There is Hope",
+    "description": "We can find your light again."
+  },
+  "emotion": {
+    "title": "How are you feeling today?",
+    "current": "Current emotion",
+    "sad": "Sad",
+    "neutral": "Neutral",
+    "happy": "Happy",
+    "submit": "Share Your Emotion",
+    "thankYou": "Thank you for sharing!",
+    "yourFeeling": "Your feeling",
+    "reason": "What makes you feel this way?",
+    "placeholder": "Share what's on your mind...",
+    "submitReflection": "Submit Reflection",
+    "yourReflection": "Your reflection"
+  },
+  "features": {
+    "our": "Our Features",
+    "aiScreening": {
+      "title": "AI Symptom Screening",
+      "summary": "21-question BDI (Beck Depression Inventory) assessment via AI chatbot to track depression symptoms.",
+      "details": [
+        "Clinically validated BDI test evaluates depression severity",
+        "AI chatbot provides instant, confidential results",
+        "Personalized recommendations",
+        "AI clinical interview & cognitive screening"
+      ],
+      "icon": "brain"
+    },
+    "therapyJourney": {
+      "title": "Your Therapy Journey",
+      "summary": "Personalized support. Real therapists, connect for sessions and chats.",
+      "details": [
+        "Algorithm matches you with specialists, based on therapy approach, language, specializations",
+        "Includes video sessions, secure messaging",
+        "Customizable plans and progress tracking"
+      ],
+      "icon": "userMd"
+    },
+    "wellBeingToolkit": {
+      "title": "Your Well-Being Toolkit",
+      "summary": "10+ evidence-based exercises & relaxation tools.",
+      "details": [
+        "Mindfulness and calm",
+        "CBT worksheets and coping strategies",
+        "Skills Builders",
+        "Reflection and practice",
+        "Daily self-care"
+      ],
+      "icon": "heartbeat"
+    },
+    "common": {
+      "seeMore": "See More ↓",
+      "seeLess": "See Less ↑"
+    },
+    "topLeft": {
+      "title": "Your Companion in Overcoming Depression",
+      "description": "Depression can feel overwhelming, but you don’t have to face it alone. Grace is an AI-powered platform designed to guide you through therapy, self-care, and healing with personalized support. Whether you need an initial diagnosis, therapeutic exercises, or a structured treatment plan.",
+      "footer": "Your journey to wellness starts here."
+    },
+    "services": {
+      "intro": "At Grace, we provide a safe, modern space for healing and growth. Our evidence-based services include:",
+      "screening": {
+        "title": "AI-Powered Depression Screening",
+        "desc": ""
+      },
+      "sessions": {
+        "title": "Secure Therapy Sessions",
+        "desc": ""
+      },
+      "plans": {
+        "title": "Personalized Treatment Plans",
+        "desc": ""
+      },
+      "support": {
+        "title": "Emergency Support",
+        "desc": ""
+      }
+    }
+  },
+  "grace": {
+    "title": "Grace's Healing Pathway",
+    "steps": {
+      "test": {
+        "title": "Depression Test",
+        "tagline": "First Step to Understanding",
+        "description": "Grace uses the scientifically validated Beck Depression Inventory (BDI)...",
+        "features": [
+          {
+            "title": "Assessment Options",
+            "items": [
+              "AI Chat Diagnosis - Conversational evaluation",
+              "Form-Based Diagnosis - Structured questionnaire"
+            ]
+          },
+          {
+            "title": "What You'll Get",
+            "items": [
+              "Personalized depression level insights",
+              "Thought reflection guidance",
+              "Clear starting point for treatment"
+            ]
+          },
+          {
+            "title": "Why It Matters",
+            "items": [
+              "Establishes your baseline",
+              "Helps tailor your therapy plan",
+              "Provides objective measurement"
+            ]
+          }
+        ]
+      },
+      "therapist": {
+        "title": "Begin with Therapist",
+        "tagline": "Personalized Care Journey",
+        "description": "Grace connects you with the right professional support...",
+        "features": [
+          {
+            "title": "How it works",
+            "items": [
+              "Choose your perfect match therapist",
+              "Choose your sessions time",
+              "Start your therapy journey"
+            ]
+          },
+          {
+            "title": "Treatment Features",
+            "items": [
+              "Tailored treatment plans",
+              "Continuous chat support",
+              "Scheduled sessions"
+            ]
+          },
+          {
+            "title": "Progress Tracking",
+            "items": [
+              "Regular check-ins",
+              "Visual progress charts",
+              "Adjustable treatment intensity"
+            ]
+          }
+        ]
+      },
+      "tools": {
+        "title": "Therapeutic Tools",
+        "tagline": "Science-Backed Techniques",
+        "description": "Access a comprehensive toolkit of therapeutic exercises...",
+        "features": [
+          {
+            "title": "Therapy Tools",
+            "items": [
+              "Diary & pattern tracking",
+              "Problem solving frameworks",
+              "Social role playing"
+            ]
+          },
+          {
+            "title": "Self-Care Practices",
+            "items": [
+              "Mindfulness meditation",
+              "Breathing techniques",
+              "Muscle relaxation"
+            ]
+          },
+          {
+            "title": "Behavioral Tools",
+            "items": [
+              "Cognitive reframing",
+              "Emotion regulation",
+              "Goal setting systems"
+            ]
+          }
+        ]
+      },
+      "healing": {
+        "title": "Healing & Growth",
+        "tagline": "Your Wellness Journey",
+        "description": "Grace supports your long-term mental wellness...",
+        "features": [
+          {
+            "title": "Progress Recognition",
+            "items": [
+              "Mood improvement tracking",
+              "Mindset shift awareness",
+              "Behavioral change metrics"
+            ]
+          },
+          {
+            "title": "Resilience Building",
+            "items": [
+              "Setback prevention plans",
+              "Coping strategy development",
+              "Stress management techniques"
+            ]
+          },
+          {
+            "title": "Maintenance",
+            "items": [
+              "Long-term wellness strategies",
+              "Relapse prevention",
+              "Community support options"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "therapist": {
+    "title": "For Therapists",
+    "subtitle": "Your Complete Digital Practice",
+    "description": "Elevate Your Therapy Practice with Next-Generation Tools\nTransform your clinical workflow with an intelligent platform that combines cutting-edge technology with therapeutic expertise. Our system isn't just software—it's your digital practice partner, meticulously designed to:\n- Automate the routine (so you focus on what matters: your clients)\n- Amplify your insights with AI-powered clinical tools\n- Deepen therapeutic impact through continuous engagement\n- Expand your reach without compromising care quality",
+    "features": {
+      "virtualOffice": {
+        "name": "Your Virtual Office",
+        "year": "All-in-One Practice Management",
+        "description": "Patient records, schedules and communications unified in one HIPAA-compliant hub with smart scheduling and automated reminders"
+      },
+      "clinicalAssistant": {
+        "name": "Your Clinical Assistant",
+        "year": "AI-Powered Clinical Tools",
+        "description": "AI symptom pattern detection, DSM-5 diagnostic references"
+      },
+      "educationStudio": {
+        "name": "Your Educational Studio",
+        "year": "Client Engagement Platform",
+        "description": "Evergreen content library, engagement analytics, and moderated community spaces"
+      },
+      "outcomesLab": {
+        "name": "Your Outcomes Lab",
+        "year": "Progress Tracking & Reporting",
+        "description": "Visual progress tracking, automated outcome measurement, and exportable reports"
+      }
+    }
+  },
+
+  "whyGrace": {
+    "title": "Why Grace?",
+    "subtitle": "Bridging the gap in mental health care with innovative solutions",
+    "theNeed": {
+      "title": "The Need",
+      "paragraph": "Depression affects millions worldwide, yet many struggle to access proper care due to systemic barriers.",
+      "points": [
+        {
+          "title": "High Costs",
+          "desc": "Traditional therapy can be prohibitively expensive, with sessions often costing $100-$200 each."
+        },
+        {
+          "title": "Limited Availability",
+          "desc": "Many areas face therapist shortages, with waitlists stretching months for new patients."
+        },
+        {
+          "title": "Stigma & Access",
+          "desc": "Social stigma and logistical challenges prevent many from seeking the help they need."
+        }
+      ]
+    },
+    "theSolution": {
+      "title": "The Solution",
+      "paragraph": "Grace provides accessible, affordable, and personalized mental health support through innovative technology.",
+      "points": [
+        {
+          "title": "Always Accessible",
+          "desc": "24/7 AI support with optional professional therapy, available anytime, anywhere."
+        },
+        {
+          "title": "Affordable Care",
+          "desc": "Fraction of the cost of traditional therapy with comparable effectiveness for many cases."
+        },
+        {
+          "title": "Stigma-Free",
+          "desc": "Private, judgment-free support that meets you where you are in your mental health journey."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start Your Healing Today with Grace 🌿",
+      "desc": "Take the first step—take the test, choose your path, and let Grace guide you toward a happier, healthier mind."
+    }
+  },
+
+  "vision": {
+    "title": "OUR VISION",
+    "text": "Our vision is to create a meaningful space where creativity, healing, and human connection thrive. We believe in designing digital experiences that empower individuals and inspire positive transformation in both personal and professional lives."
+  },
+
+  "about": {
+    "title": "About Us",
+    "description": "GRACE was born from a simple yet powerful belief: that everyone deserves access to compassionate, intelligent, and personalized mental health support — no matter where they are in life. Our journey began with a question: What if technology could not only understand how we feel, but guide us toward healing? From this vision, GRACE was created — a mental health platform designed to help individuals understand, manage, and overcome depression through a thoughtful combination of human care and AI-powered tools. We value empathy, privacy, and dignity.",
+    "founders": "- Founded by Tariq Alahmer and Mohammed Zair"
+  },
+
+  "experts": {
+    "title": "THE EXPERTS",
+    "roles": {
+      "caroline": "Professorship for Ecosocial Work and Care",
+      "nora": "Psychotherapist",
+      "afaf": "Dean of the Faculty of IE & AI Researcher",
+      "youssef": "Professor in Psychiatry",
+      "thayr": "Psychiatrist",
+      "rawan": "Psychotherapist"
+    }
+  },
+
+  "contact": {
+    "title": "CONTACT US"
+  },
+  "contactForm": {
+    "placeholders": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Message"
+    },
+    "button": "Send",
+    "success": "✅ Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+
+  "navbar": {
+    "links": {
+      "how": "How It Works",
+      "features": "Features",
+      "therapist": "For the Therapist",
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "home": "Home",
+      "emergency": "Emergency"
+    }
+  },
+  "footer": {
+    "howItWorks": "How It Works",
+    "features": "Features",
+    "therapist": "For the Therapist",
+    "about": "About Us",
+    "subtitle": "Mental Health Platform",
+    "rights": "All Rights Reserved.",
+    "line": "FooterLine"
+  }
+}

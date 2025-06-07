@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+import dir from "tailwindcss-dir";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: ["class", '[class~="light"]'],
+  darkMode: "class",
   theme: {
+    // نفس اللي عندك
     screens: {
       sm: "350px",
       md: "768px",
@@ -11,34 +14,32 @@ export default {
       "2xl": "1536px",
     },
     colors: {
-      // Dark mode colors (default)
+      // نفس الألوان
       darkBrown: "#021729",
       black: "#1e1917",
       white: "#f1e1d9",
-      cyan: "#15d1e9", // This will be used for text in dark mode
+      cyan: "#15d1e9",
       lightCyan: "#88e5f0",
       darkCyan: "#009fb3",
-      darkerCyan: "#0081b1", // This will be used for text in light mode
+      darkerCyan: "#0081b1",
       orange: "#ffde21",
       grey: "#102f41",
       lightGrey: "#f1e1d9",
       darkGrey: "#3f4441",
       fill: "#F5C9B3",
-
-      // Light mode colors
       light: {
-        darkBrown: "#F4F5F7", // خلفية رمادية ناعمة - بديلة لداكنة
-        black: "#111827", // أسود أنيق بلمسة رمادية (مناسب للنصوص الداكنة)
-        white: "#FFFFFF", // أبيض نقي
-        cyan: "#38BDF8", // Cyan رئيسي مشرق (أزرار وروابط)
-        lightCyan: "#7DD3FC", // Cyan فاتح للعناصر المساعدة
-        darkCyan: "#0EA5E9", // Cyan غامق للتفاعل Hover
-        darkerCyan: "#0369A1", // Cyan أغمق للنصوص المهمة أو الزر عند الضغط
-        orange: "#FBBF24", // برتقالي دافئ مشرق
-        grey: "#E5E7EB", // رمادي خفيف (حدود أو خلفيات صامتة)
-        lightGrey: "#F9FAFB", // رمادي شبه أبيض – خلفيات عامة مريحة
-        darkGrey: "#9CA3AF", // رمادي متوسط للنصوص المساعدة أو الغير فعالة
-        fill: "#FEF3C7", // لون تعبئة خفيف (أصفر فاتح جداً) — مثل تلميحات
+        darkBrown: "#F4F5F7",
+        black: "#111827",
+        white: "#FFFFFF",
+        cyan: "#38BDF8",
+        lightCyan: "#7DD3FC",
+        darkCyan: "#0EA5E9",
+        darkerCyan: "#0369A1",
+        orange: "#FBBF24",
+        grey: "#E5E7EB",
+        lightGrey: "#F9FAFB",
+        darkGrey: "#9CA3AF",
+        fill: "#FEF3C7",
       },
     },
     extend: {
@@ -61,5 +62,8 @@ export default {
       special: ['"Nunito"'],
     },
   },
-  plugins: [],
+  plugins: [
+    dir(), // ✅ هذا يضيف دعم RTL و LTR
+    require("@tailwindcss/aspect-ratio"), // إن كنت تستخدمه
+  ],
 };

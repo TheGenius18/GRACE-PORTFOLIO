@@ -1,19 +1,22 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const EmotionSlider = ({ emotionLevel, handleEmotionChange }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full max-w-md mb-8">
-      <motion.label 
+      <motion.label
         htmlFor="emotion-range"
         className="block text-lg font-medium text-gray-700 mb-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
-        Current emotion: {emotionLevel}%
+        {t("emotion.current")}: {emotionLevel}%
       </motion.label>
-      
+
       <input
         type="range"
         id="emotion-range"
@@ -23,11 +26,11 @@ const EmotionSlider = ({ emotionLevel, handleEmotionChange }) => {
         onChange={(e) => handleEmotionChange(parseInt(e.target.value))}
         className="w-full h-2 bg-cyan rounded-full appearance-none cursor-pointer"
       />
-      
+
       <div className="flex justify-between text-sm text-gray-600 mt-3">
-        <span>😔 Sad</span>
-        <span>😐 Neutral</span>
-        <span>😊 Happy</span>
+        <span>{t("emotion.sad")}</span>
+        <span>{t("emotion.neutral")}</span>
+        <span>{t("emotion.happy")}</span>
       </div>
     </div>
   );

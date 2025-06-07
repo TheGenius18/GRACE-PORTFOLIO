@@ -1,5 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 const FooterLine = () => {
-  return <div>FooterLine</div>;
+  const { t } = useTranslation();
+
+  return <div>{t("footer.line")}</div>;
 };
 
 export default FooterLine;

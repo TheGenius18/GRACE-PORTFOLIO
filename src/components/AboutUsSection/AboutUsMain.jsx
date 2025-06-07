@@ -12,7 +12,7 @@ const AboutUsMain = () => {
         variants={fadeIn("right", 0)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
       >
         <AboutText />
       </motion.div>
@@ -20,7 +20,7 @@ const AboutUsMain = () => {
         variants={fadeIn("left", 0)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
       >
         <AboutImage />
       </motion.div>
