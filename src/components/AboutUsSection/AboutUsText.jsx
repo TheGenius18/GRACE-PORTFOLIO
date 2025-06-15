@@ -14,7 +14,7 @@ const AboutUsText = () => {
     >
       <h2 className="text-6xl text-cyan mb-10">{t("about.title")}</h2>
 
-      <p className="text-2xl whitespace-pre-line">{t("about.description")}</p>
+      <p className="text-1xl whitespace-pre-line">{t("about.description")}</p>
 
       <br />
       <h6>{t("about.founders")}</h6>
