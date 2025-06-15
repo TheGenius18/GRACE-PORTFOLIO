@@ -12,7 +12,8 @@ import Services from "../components/ServicesMain/ServicesMain";
 import Journey from "../components/Journey/Journey";
 import TeamSection from "../components/TeamSection/TheExpertsSection";
 import OurVision from "../components/OurVisionSection/OurVisionSection";
-
+import Progress from "../components/Progress/Progress";
+import Data from "../components/DATAPROTECTION/Data";
 export default function Home() {
   return (
     <div className="font-body text-white relative overflow-hidden p-2 font-sans  ">
@@ -21,15 +22,15 @@ export default function Home() {
       <HeroGradient />
       {/* <SubHeroMain /> */}
       <Emotion />
-
       <ExperienceMain />
       <Services />
       <TherapistsMain />
       <Journey />
       <OurVision />
       <AboutUsMain />
-
       <TeamSection />
+      <Progress />
+      <Data />
       <ContactMeMain />
       <FooterMain />
     </div>

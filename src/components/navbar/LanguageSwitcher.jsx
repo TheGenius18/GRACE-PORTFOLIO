@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
     <div className="flex gap-2 ml-3">
       {" "}
       {/* ⬅️ spacing from logo */}
-      {["en", "ar"].map((lng) => (
+      {["en", "ar", "de"].map((lng) => (
         <button
           key={lng}
           onClick={() => switchLanguage(lng)}

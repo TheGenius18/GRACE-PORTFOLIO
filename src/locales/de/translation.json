@@ -1,0 +1,371 @@
+{
+  "hero": {
+    "subtitle": "Auch in deinen schwersten Momenten",
+    "title": "Es gibt Hoffnung",
+    "description": "Wir können dein Licht wiederfinden."
+  },
+  "emotion": {
+    "title": "Wie fühlst du dich heute?",
+    "current": "Aktuelle Stimmung",
+    "sad": "Traurig",
+    "neutral": "Neutral",
+    "happy": "Glücklich",
+    "submit": "Teile deine Stimmung",
+    "thankYou": "Danke fürs Teilen!",
+    "yourFeeling": "Dein Gefühl",
+    "reason": "Warum fühlst du dich so?",
+    "placeholder": "Teile, was dich beschäftigt…",
+    "submitReflection": "Reflexion absenden",
+    "yourReflection": "Deine Reflexion"
+  },
+  "features": {
+    "our": "Unsere Funktionen",
+    "aiScreening": {
+      "title": "KI-Symptom-Check",
+      "summary": "21-Fragen BDI-Test (Beck-Depressions-Inventar) mittels KI-Chatbot zur Erfassung von Depressionssymptomen.",
+      "details": [
+        "Klinisch validierter BDI-Test bewertet Depressionsschwere",
+        "KI-Chatbot liefert sofortige, vertrauliche Ergebnisse",
+        "Personalisierte Empfehlungen",
+        "KI-gestütztes klinisches Interview & kognitive Einschätzung"
+      ],
+      "icon": "brain"
+    },
+    "therapyJourney": {
+      "title": "Deine Therapie-Reise",
+      "summary": "Personalisierte Betreuung. Echte Therapeut:innen – Sitzungen & Chats.",
+      "details": [
+        "Algorithmus findet passende Spezialist:innen nach Therapieansatz, Sprache, Spezialisierung",
+        "Video-Sitzungen, sichere Nachrichten",
+        "Individuelle Pläne & Fortschrittsverfolgung"
+      ],
+      "icon": "userMd"
+    },
+    "wellBeingToolkit": {
+      "title": "Dein Wohlfühl‑Toolkit",
+      "summary": "Über 10 evidenzbasierte Übungen & Entspannungswerkzeuge.",
+      "details": [
+        "Achtsamkeit & Ruhe",
+        "CBT-Arbeitsblätter und Bewältigungsstrategien",
+        "Skill‑Training",
+        "Reflexion und Praxis",
+        "Tägliche Selbstfürsorge"
+      ],
+      "icon": "heartbeat"
+    },
+    "common": {
+      "seeMore": "Mehr anzeigen ↓",
+      "seeLess": "Weniger anzeigen ↑"
+    },
+    "topLeft": {
+      "title": "Dein Begleiter im Kampf gegen Depression",
+      "description": "Depression kann überwältigend sein, aber du musst ihr nicht allein begegnen. Grace ist eine KI-basierte Plattform, die dich durch Therapie, Selbstfürsorge und Heilung mit personalisierter Unterstützung führt. Egal ob du eine Erstdiagnose, therapeutische Übungen oder einen strukturierten Behandlungsplan brauchst.",
+      "footer": "Dein Weg zur Genesung beginnt hier."
+    },
+    "services": {
+      "intro": "Bei Grace bieten wir einen sicheren, modernen Raum für Heilung und Wachstum. Unsere evidenzbasierten Leistungen umfassen:",
+      "screening": {
+        "title": "KI-gestütztes Depressions‑Screening",
+        "desc": ""
+      },
+      "sessions": {
+        "title": "Sichere Therapiesitzungen",
+        "desc": ""
+      },
+      "plans": {
+        "title": "Personalisierte Behandlungspläne",
+        "desc": ""
+      },
+      "support": {
+        "title": "Notfall‑Unterstützung",
+        "desc": ""
+      }
+    }
+  },
+  "grace": {
+    "title": "Graces Heilungsweg",
+    "steps": {
+      "test": {
+        "title": "Depressionstest",
+        "tagline": "Erster Schritt zum Verstehen",
+        "description": "Grace verwendet das wissenschaftlich validierte Beck-Depressions-Inventar (BDI)…",
+        "features": [
+          {
+            "title": "Bewertungsoptionen",
+            "items": [
+              "KI‑Chat-Diagnose – Gesprächsbasierte Einschätzung",
+              "Formularbasierte Diagnose – Strukturierter Fragebogen"
+            ]
+          },
+          {
+            "title": "Was du bekommst",
+            "items": [
+              "Personalisierte Einordnung des Depressionsniveaus",
+              "Reflexions‑Anleitung zu Gedanken",
+              "Klaren Ausgangspunkt für die Behandlung"
+            ]
+          },
+          {
+            "title": "Warum es wichtig ist",
+            "items": [
+              "Ermöglicht deine Ausgangslage",
+              "Hilft, deinen Therapieplan anzupassen",
+              "Objektives Messinstrument"
+            ]
+          }
+        ]
+      },
+      "therapist": {
+        "title": "Beginne mit Therapeut:in",
+        "tagline": "Personalisiert betreut",
+        "description": "Grace verbindet dich mit passender professioneller Unterstützung…",
+        "features": [
+          {
+            "title": "So funktioniert’s",
+            "items": [
+              "Wähle deine ideale Therapeut:in",
+              "Lege deine Therapiesitzungen fest",
+              "Starte deine Therapie-Reise"
+            ]
+          },
+          {
+            "title": "Behandlungsfunktionen",
+            "items": [
+              "Maßgeschneiderte Therapiepläne",
+              "Kontinuierlicher Chat-Support",
+              "Geplante Sitzungen"
+            ]
+          },
+          {
+            "title": "Fortschrittsverfolgung",
+            "items": [
+              "Regelmäßige Check-ins",
+              "Visuelle Fortschrittsdiagramme",
+              "Anpassbare Behandlungsintensität"
+            ]
+          }
+        ]
+      },
+      "tools": {
+        "title": "Therapeutische Tools",
+        "tagline": "Wissenschaftlich fundierte Methoden",
+        "description": "Zugriff auf ein umfassendes Toolkit therapeutischer Übungen…",
+        "features": [
+          {
+            "title": "Therapie-Werkzeuge",
+            "items": [
+              "Tagebuch- & Musterverfolgung",
+              "Problemlösungs‑Rahmen",
+              "Rollenspiele"
+            ]
+          },
+          {
+            "title": "Selbstfürsorge‑Praktiken",
+            "items": [
+              "Achtsamkeitsmeditation",
+              "Atemübungen",
+              "Muskelentspannung"
+            ]
+          },
+          {
+            "title": "Verhaltens‑Tools",
+            "items": [
+              "Kognitive Umstrukturierung",
+              "Emotionsregulation",
+              "Zielsetzungssysteme"
+            ]
+          }
+        ]
+      },
+      "healing": {
+        "title": "Heilung & Wachstum",
+        "tagline": "Dein Wohlfühl‑Weg",
+        "description": "Grace unterstützt dein langfristiges psychisches Wohlbefinden…",
+        "features": [
+          {
+            "title": "Fortschritt erkennen",
+            "items": [
+              "Stimmungsverbesserung verfolgen",
+              "Bewusstsein für Sinneswandel",
+              "Maßwerte für Verhaltensänderung"
+            ]
+          },
+          {
+            "title": "Resilienz aufbauen",
+            "items": [
+              "Pläne zur Rückfallprävention",
+              "Entwicklung von Bewältigungsstrategien",
+              "Stressmanagement‑Techniken"
+            ]
+          },
+          {
+            "title": "Maintenance",
+            "items": [
+              "Langfriststrategien für Wohlbefinden",
+              "Rückfallvermeidung",
+              "Optionen zur Gemeinschaftsunterstützung"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "therapist": {
+    "title": "Für Therapeut:innen",
+    "subtitle": "Deine vollständige digitale Praxis",
+    "description": "Steigere deine therapeutische Praxis mit modernsten Tools\nVerwandle deinen klinischen Workflow mit einer intelligenten Plattform, die Spitzentechnologie und therapeutische Expertise kombiniert. Unser System ist nicht nur Software – es ist dein digitaler Praxispartner, der sorgfältig darauf ausgelegt ist:\n- Routinen automatisieren (damit du dich auf das Wesentliche konzentrieren kannst: deine Klient:innen)\n- Deine Insights mit KI‑gestützten klinischen Tools verstärken\n- Therapeutische Wirkung durch kontinuierliches Engagement vertiefen\n- Deine Reichweite erweitern, ohne Qualität einzubüßen",
+    "features": {
+      "virtualOffice": {
+        "name": "Dein virtuelles Büro",
+        "year": "All‑in‑One Praxisverwaltung",
+        "description": "Patientenakten, Termine und Kommunikation vereint in einem HIPAA-konformen Hub mit intelligenter Planung und automatischen Erinnerungen"
+      },
+      "clinicalAssistant": {
+        "name": "Dein klinischer Assistent",
+        "year": "KI‑gestützte klinische Tools",
+        "description": "KI‑Erkennung von Symptommustern, DSM‑5-Diagnosereferenzen"
+      },
+      "educationStudio": {
+        "name": "Dein Bildungs‑Studio",
+        "year": "Plattform zur Klient:innen‑Einbindung",
+        "description": "Immer verfügbare Inhaltsbibliothek, Engagement-Analytics und moderierte Community‑Bereiche"
+      },
+      "outcomesLab": {
+        "name": "Dein Outcomes‑Labor",
+        "year": "Fortschritts‑Tracking & Berichte",
+        "description": "Visuelle Fortschrittsverfolgung, automatische Ergebnismessung und exportierbare Berichte"
+      }
+    }
+  },
+  "whyGrace": {
+    "title": "Warum Grace?",
+    "subtitle": "Innovative Lösungen für die Lücke in der psychischen Gesundheitsversorgung",
+    "theNeed": {
+      "title": "Der Bedarf",
+      "paragraph": "Depression betrifft weltweit Millionen, doch viele haben aufgrund systemischer Barrieren keinen Zugang zu angemessener Versorgung.",
+      "points": [
+        {
+          "title": "Hohe Kosten",
+          "desc": "Traditionelle Therapie kann unerschwinglich sein – oft kosten Sitzungen 100 – 200 $."
+        },
+        {
+          "title": "Begrenzte Verfügbarkeit",
+          "desc": "In vielen Regionen herrscht Therapeutenmangel, mit Wartezeiten von Monaten für neue Patient:innen."
+        },
+        {
+          "title": "Stigma & Zugang",
+          "desc": "Soziales Stigma und logistische Hürden verhindern, dass viele die Hilfe suchen, die sie benötigen."
+        }
+      ]
+    },
+    "theSolution": {
+      "title": "Die Lösung",
+      "paragraph": "Grace bietet durch innovative Technologie zugängliche, erschwingliche und personalisierte psychische Unterstützung.",
+      "points": [
+        {
+          "title": "Rund um die Uhr verfügbar",
+          "desc": "24/7 KI‑Unterstützung mit optionaler professioneller Therapie, jederzeit und überall verfügbar."
+        },
+        {
+          "title": "Bezahlbare Versorgung",
+          "desc": "Ein Bruchteil der Kosten traditioneller Therapie mit vergleichbarer Wirksamkeit in vielen Fällen."
+        },
+        {
+          "title": "Stigma‑frei",
+          "desc": "Private, urteilsfreie Unterstützung, die dich auf deinem Weg zur psychischen Gesundheit begleitet."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Beginne heute mit deinem Heilungsweg mit Grace 🌿",
+      "desc": "Mach den ersten Schritt – mach den Test, wähle deinen Weg und lass Grace dich zu einem glücklicheren, gesünderen Geist führen."
+    }
+  },
+  "vision": {
+    "title": "UNSERE VISION",
+    "text": "Unsere Vision ist es, einen bedeutungsvollen Raum zu schaffen, in dem Kreativität, Heilung und menschliche Verbindung gedeihen. Wir glauben daran, digitale Erfahrungen zu gestalten, die Einzelne stärken und positive Transformation im privaten wie beruflichen Leben inspirieren."
+  },
+  "about": {
+    "title": "Über uns",
+    "description": "Es war ein ganz gewöhnlicher Tag auf dem Campus. Wir saßen an einem kleinen Tisch in der ruhigen Ecke des Uni-Cafés. Kein großer Plan, keine Vision die Welt zu verändern – nur ein ehrliches Gespräch über das Leben, über Menschen, und darüber, wie Technologie dem Menschen dienen kann – nicht umgekehrt.\n\nDoch aus diesem Gespräch entstand mehr. Getragen von persönlichen Erfahrungen, die wir selbst oder im Umfeld erlebt hatten, nahm eine Idee Form an. Keine App im klassischen Sinne, sondern ein Gefühl – dass da draußen jemand ist, der sich einfach nur verstanden fühlen möchte, gehört werden möchte, begleitet werden möchte.\n\nUnd aus genau diesem Moment entstand GRACE.\n\nGRACE ist nicht nur eine Plattform. Es ist ein Versprechen – dass niemand seinen Weg zur Heilung allein gehen muss. Ein Glaube daran, dass Technologie mit Herz mehr sein kann als ein Werkzeug – sie kann ein Begleiter sein, ein Zuhörer, ein stiller Unterstützer.\n\nAm Anfang unserer Reise stand eine Frage – einfach und doch tiefgehend: Was wäre, wenn wir künstliche Intelligenz nutzen könnten, um nicht nur Gefühle zu analysieren, sondern sie zu begleiten – bis Heilung eintritt?\n\nUnser Team bestand aus Entwickler:innen, Therapeut:innen und human-centered Designer:innen – aus verschiedensten Hintergründen, vereint durch ein Ziel: Eine Plattform zu schaffen, die den Menschen in den Mittelpunkt stellt. GRACE bietet echte Werkzeuge: wissenschaftlich fundierte Tests, intelligente Interviews, individuelle Behandlungspläne und Übungen zur Selbstheilung.\n\nWir glauben: Datenschutz ist kein Extra, sondern ein Grundrecht. Und Therapie sollte sicher, menschlich und stärkend sein.\n\nGRACE wurde für all jene geschaffen, die sich je missverstanden fühlten. Für jene, die reden wollten, aber niemanden fanden. Und für alle, die trotz allem an Heilung glauben – wenn jemand da ist, der den Weg zeigt.\n\nWir sind GRACE. Wir versprechen keine Perfektion – aber wir versprechen, an deiner Seite zu sein. Schritt für Schritt.",
+    "founders": "- Gegründet von Tariq Alahmer und Mohammed Zair"
+  },
+
+  "experts": {
+    "title": "DIE EXPERTEN",
+    "roles": {
+      "caroline": "Professur für ökosoziale Arbeit und Pflege",
+      "nora": "Psychotherapeutin",
+      "afaf": "Dekan der Fakultät für IE & KI-Forscherin",
+      "youssef": "Professor für Psychiatrie",
+      "thayr": "Psychiater",
+      "rawan": "Psychotherapeutin"
+    }
+  },
+  "contact": {
+    "title": "KONTAKTIERE UNS"
+  },
+  "contactForm": {
+    "placeholders": {
+      "name": "Dein Name",
+      "email": "Deine E-Mail",
+      "message": "Nachricht"
+    },
+    "button": "Senden",
+    "success": "✅ Nachricht erfolgreich gesendet!",
+    "error": "Fehler beim Senden der Nachricht. Bitte versuche es erneut."
+  },
+  "navbar": {
+    "links": {
+      "how": "So funktioniert’s",
+      "features": "Funktionen",
+      "therapist": "Für Therapeut:innen",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "buttons": {
+      "home": "Startseite",
+      "emergency": "Notfall"
+    }
+  },
+  "footer": {
+    "howItWorks": "So funktioniert’s",
+    "features": "Funktionen",
+    "therapist": "Für Therapeut:innen",
+    "about": "Über uns",
+    "subtitle": "Plattform für psychische Gesundheit",
+    "rights": "Alle Rechte vorbehalten.",
+    "line": "FooterLine"
+  },
+  "progress": {
+    "title": "Fortschritt von Grace",
+    "subtitle": "Verfolge unsere Entwicklung – von der Idee bis zur Veröffentlichung.",
+    "steps": [
+      {
+        "title": "Konzept & Forschung",
+        "date": "-",
+        "desc": "Wir haben die Recherche, Konzeptentwicklung und vollständige Projektplanung abgeschlossen – ein aufwändiger Prozess, der viel Zeit und Präzision erforderte, um einen funktionalen und umsetzbaren Prototyp zu entwickeln."
+      },
+
+      {
+        "title": "KI Model",
+        "date": "-",
+        "desc": "Wir entwickeln derzeit ein KI-Modell, das alle zentralen Komponenten der Plattform unterstützt und jedem Nutzer intelligente, personalisierte Hilfe bietet."
+      },
+      {
+        "title": "App",
+        "date": "-",
+        "desc": "Wir arbeiten derzeit an der Erstversion der App und haben rund ein Drittel der Arbeit abgeschlossen. Unser Ziel ist es, eine benutzerorientierte Lösung zu bieten, die den Erwartungen professionell und engagiert gerecht wird."
+      },
+      {
+        "title": "Öffentliche Einführung",
+        "date": "15/7/2025",
+        "desc": "Offizieller öffentlicher Beta-Start mit allen Funktionen und Feedback-System."
+      }
+    ]
+  },
+  "data": {
+    "title": "Datenschutz",
+    "paragraph": "Bei GRACE ist Datenschutz nicht nur eine Priorität, sondern ein grundlegendes Prinzip. Wir setzen branchenführende Verschlüsselungsstandards, anonyme Datenverarbeitung und sichere Infrastruktur ein, um jede Interaktion zu schützen. Von emotionalen Reflexionen bis hin zu Therapiesitzungen wird jede Information streng vertraulich behandelt und niemals ohne deine ausdrückliche Zustimmung weitergegeben. Wir erfüllen internationale Datenschutzrichtlinien und führen regelmäßige Audits durch, um höchste Standards an Vertraulichkeit, Transparenz und ethischer Verantwortung sicherzustellen."
+  }
+}

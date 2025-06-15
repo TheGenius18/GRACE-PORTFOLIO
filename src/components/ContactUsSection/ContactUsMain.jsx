@@ -11,7 +11,7 @@ const ContactMain = () => {
       id="contact"
       className="mt-60 bg-gradient-to-r from-[#24025333] to-[#01092336] max-w-[1200px] mx-auto px-4 p-5 rounded border-cyan border-[0.5px]"
     >
-      <h2 className="text-7xl text-cyan mb-10 text-center">
+      <h2 className="text-5xl text-cyan mb-10 text-center">
         {t("contact.title")}
       </h2>
 

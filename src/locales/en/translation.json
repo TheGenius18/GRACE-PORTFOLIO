@@ -290,7 +290,7 @@
 
   "about": {
     "title": "About Us",
-    "description": "GRACE was born from a simple yet powerful belief: that everyone deserves access to compassionate, intelligent, and personalized mental health support — no matter where they are in life. Our journey began with a question: What if technology could not only understand how we feel, but guide us toward healing? From this vision, GRACE was created — a mental health platform designed to help individuals understand, manage, and overcome depression through a thoughtful combination of human care and AI-powered tools. We value empathy, privacy, and dignity.",
+    "description": "It was just another ordinary day on campus. We sat at a small table tucked away in a quiet corner of the university café. No grand plan. No intention to change the world. Just two people talking about life, people, and the possibility that technology could serve humanity—not control it.\n\nBut the conversation slowly grew into something more. Based on stories we had lived or witnessed firsthand, an idea began to take shape. Not just an app, but a deep feeling that someone, somewhere, needed to feel understood, heard, and supported through their mental health journey.\n\nAnd from that moment, GRACE was born.\n\nGRACE is not just a digital platform. It’s a promise—a promise that no one should walk the path of healing alone. A belief that technology, when built with heart, can become a companion, a guide, a quiet supporter.\n\nWe began our journey with one simple but profound question: What if we could use artificial intelligence not just to analyze emotions, but to walk beside them—until healing begins?\n\nOur team brought together developers, therapists, and human-centered designers—people from different backgrounds, united by one goal: to create a platform that respects the human being before anything else. GRACE offers real tools: scientific assessments, intelligent cognitive interviews, personalized treatment plans, and well-designed exercises for recovery.\n\nWe believe privacy is not a feature, but a right. And that therapy should feel safe, human, and empowering.\n\nGRACE was built for those who’ve felt misunderstood. For those who longed to speak, but didn’t know where to begin. And for anyone who still believes healing is possible—if someone simply shows the way.\n\nWe are GRACE. We don’t promise perfection, but we promise to walk with you, every step of the way.",
     "founders": "- Founded by Tariq Alahmer and Mohammed Zair"
   },
 
@@ -341,5 +341,35 @@
     "subtitle": "Mental Health Platform",
     "rights": "All Rights Reserved.",
     "line": "FooterLine"
+  },
+  "progress": {
+    "title": "GRACE PROGRESS",
+    "subtitle": "Track our development journey — from concept to launch.",
+    "steps": [
+      {
+        "title": "Concept & Research",
+        "date": "-",
+        "desc": "We have completed the research, conceptual development, and full architectural planning of the project — a process that required time and precision to deliver a functional and scalable prototype."
+      },
+      {
+        "title": "AI Model",
+        "date": "-",
+        "desc": "We are actively developing an AI model designed to support all key components of the platform, ensuring intelligent and personalized assistance for every user."
+      },
+      {
+        "title": "App Programming",
+        "date": "-",
+        "desc": "We are currently developing the first version of the app and have completed approximately one-third of the work. Our goal is to deliver a user-focused solution that meets expectations with professionalism and care."
+      },
+      {
+        "title": "Public Launch",
+        "date": "15/7/2025",
+        "desc": "Official public beta release with full features and feedback system."
+      }
+    ]
+  },
+  "data": {
+    "title": "Data Protection",
+    "paragraph": "At GRACE, your privacy is not just a priority — it’s a foundational principle. We implement industry-leading encryption standards, anonymized data handling, and secure infrastructure to ensure every interaction is protected. From your emotional reflections to session history, all data is stored with strict access controls and never shared without your explicit consent. We comply with international data protection frameworks and continuously audit our systems to uphold the highest standards of confidentiality, transparency, and ethical responsibility."
   }
 }

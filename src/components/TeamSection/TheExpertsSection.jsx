@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const experts = [
-  {
-    name: "Prof. Dr. Caroline Schmitt",
-    roleKey: "caroline",
-    contact: "caroline.schmitt@fra-uas.de",
-    img: "/images/caro.png",
-  },
+  // {
+  //   name: "Prof. Dr. Caroline Schmitt",
+  //   roleKey: "caroline",
+  //   contact: "caroline.schmitt@fra-uas.de",
+  //   img: "/images/caro.png",
+  // },
   {
     name: "Dr. Nora",
     roleKey: "nora",
