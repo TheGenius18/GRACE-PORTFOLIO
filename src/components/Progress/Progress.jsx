@@ -13,7 +13,7 @@ const Progress = () => {
     <section id="progress" className="py-20 px-4 bg-darkBrown">
       <div className="max-w-4xl mx-auto">
         <h2
-          className="text-8xl font-bold text-center mb-8"
+          className="text-7xl font-bold text-center mb-8"
           style={{ color: "#00FFFF" }}
         >
           {t("progress.title")}
