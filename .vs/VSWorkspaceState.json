@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\Progress",
+    "\\src\\components\\ServicesMain"
   ],
   "PreviewInSolutionExplorer": false
 }

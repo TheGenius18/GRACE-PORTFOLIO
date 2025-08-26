@@ -40,7 +40,7 @@ const Progress = () => {
                   <h3 className="text-lg font-semibold text-white ml-6">
                     {step.title}
                   </h3>
-                  <p className="text-sm text-cyan-300 mb-1 ml-7">{step.date}</p>
+                  
                   <p className="text-white/90 text-sm ml-7">{step.desc}</p>
                 </div>
               </motion.div>
